@@ -16,7 +16,7 @@
   color: white;
   font-weight: 700;
   border-radius: 2rem;
-  font-size: 1rem;
+  font-size: 1.4rem;
 }
 .btn2 {
   background: none;
@@ -149,7 +149,7 @@ nav {
   display: none;
 }
 
-/* Change Your Habits Section */
+/* ----------------------------------Change Your Habits Section--------------------------------- */
 main {
   background: #000000;
 }
@@ -202,7 +202,37 @@ main {
   color: rgba(255, 255, 255, 0.5);
 }
 
-/* Media Query */
+/* ---------------------------------Run Extra Mile Section---------------------------------- */
+.run-extra-mile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(34, 34, 34);
+  padding: 2.5rem;
+  border-radius: 1.2rem;
+}
+.run-extra-mile img {
+  width: 40%;
+  /* max-width: 400px; */
+  border-radius: 1.2rem;
+}
+.run-extra-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+  max-width: 450px;
+}
+.run-extra-text h1 {
+  color: white;
+  font-size: 4rem;
+  font-weight: 900;
+}
+.run-extra-text p {
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 24px;
+}
+/* ---------------------------------Media Query--------------------------------------------- */
+
 @media screen and (max-width: 576px) {
   #banner {
     flex-direction: column;
@@ -270,5 +300,14 @@ main {
     font-size: 2rem;
     /* padding: 0;
     margin: 0; */
+  }
+  /* ---------------------------------Run Extra Mile Section---------------------------------- */
+  .run-extra-mile {
+    flex-direction: column;
+    gap: 4rem;
+    padding: 1rem;
+  }
+  .run-extra-mile img {
+    width: 100%;
   }
 }
