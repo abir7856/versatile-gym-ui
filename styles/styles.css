@@ -25,8 +25,9 @@
 
 /* Header Part */
 header {
-  background: linear-gradient(180deg, #000000, #201f1f);
+  background: linear-gradient(0deg, #000000, #201f1f);
   padding-top: 3rem;
+  padding-bottom: 5rem;
 }
 nav {
   display: flex;
@@ -148,6 +149,59 @@ nav {
   display: none;
 }
 
+/* Change Your Habits Section */
+main {
+  background: #000000;
+}
+#Change-your-habits {
+  display: flex;
+  gap: 2.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 7rem;
+  padding-top: 2rem;
+}
+#Change-your-habits h1 {
+  color: white;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  font-weight: 900;
+}
+#Change-your-habits > p {
+  color: rgba(255, 255, 255, 0.5);
+  max-width: 670px;
+  text-align: center;
+  line-height: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+.change-your-habits-portfolio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+.change-your-habits-portfolio img {
+  border-radius: 50%;
+  border: 3px solid gray;
+}
+.portfolio-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+.portfolio-img h5 {
+  color: white;
+  font-size: 1.3rem;
+  margin-top: 10px;
+}
+.portfolio-img p {
+  color: rgba(255, 255, 255, 0.5);
+}
+
 /* Media Query */
 @media screen and (max-width: 576px) {
   #banner {
@@ -204,5 +258,17 @@ nav {
   .banner-nmbr1 h2 {
     font-size: 2rem;
     letter-spacing: 2px;
+  }
+  .change-your-habits-portfolio {
+    flex-direction: column;
+  }
+  #Change-your-habits {
+    /* padding: 0;
+    margin: 0; */
+  }
+  #Change-your-habits h1 {
+    font-size: 2rem;
+    /* padding: 0;
+    margin: 0; */
   }
 }
