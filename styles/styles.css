@@ -315,7 +315,79 @@ select {
   color: rgba(255, 255, 255, 0.5);
   margin-bottom: 1rem;
 }
-
+/* --------------------------------------- Meet our team ----------------------------------------------------------- */
+.meet-our-team {
+  padding-bottom: 5rem;
+}
+.meet-our-team h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  color: white;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+.meet-our-team p {
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  max-width: 672px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+.meet-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+  gap: 1rem;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.1);
+}
+.meet-portfolio img {
+  width: 326px;
+  height: 272px;
+  border-radius: 18px;
+}
+/* ---------------------------------------------- Footer ----------------------------------------------------------------- */
+footer {
+  background: rgb(34, 34, 34);
+  padding-top: 4rem;
+}
+.footer-left p {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.5);
+  max-width: 443px;
+  margin-top: 1.5rem;
+  line-height: 2rem;
+}
+.get-start-title {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+.footer-right p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+.footer-text-container {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+  padding-bottom: 3rem;
+}
+.footer-right {
+  display: flex;
+  justify-content: space-between;
+  gap: 20rem;
+}
+.copyrights {
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  padding: 2rem;
+}
 /* ---------------------------------Media Query--------------------------------------------- */
 
 @media screen and (max-width: 576px) {
@@ -410,5 +482,18 @@ select {
   }
   .bmi {
     padding: 1rem;
+  }
+  /* --------------------------------------- Meet our team ----------------------------------------------------------- */
+  .meet-our-team h1 {
+    font-size: 2rem;
+  }
+  /* ---------------------------------------------- Footer ----------------------------------------------------------------- */
+  .footer-right {
+    gap: 2rem;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .footer-text-container {
+    flex-direction: column;
   }
 }
