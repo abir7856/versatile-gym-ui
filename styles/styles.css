@@ -183,7 +183,7 @@ main {
 }
 .change-your-habits-portfolio img {
   border-radius: 50%;
-  border: 3px solid gray;
+  border: 5px solid rgba(128, 128, 128, 0.534);
 }
 .portfolio-img {
   display: flex;
@@ -231,6 +231,91 @@ main {
   color: rgba(255, 255, 255, 0.5);
   line-height: 24px;
 }
+
+/* ---------------------------------- BMI Calculator Section ----------------------------------- */
+.bmi {
+  padding: 5rem;
+  /* background: rgb(34, 34, 34); */
+}
+.bmi-main-text {
+  margin-bottom: 3rem;
+  background: #000;
+}
+.bmi-main-text h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.bmi-main-text p {
+  color: rgba(255, 255, 255, 0.5);
+  text-align: left;
+  max-width: 672px;
+  margin: 0 auto;
+}
+.bmi-container {
+  background: rgb(34, 34, 34);
+}
+.bmi-calculator {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  padding: 3rem;
+}
+.calc-chart {
+  color: #fff;
+  text-align: left;
+}
+.calc-chart h2 {
+  font-size: 1.8rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+.calc-chart table,
+td,
+th {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-collapse: collapse;
+  padding: 1.2rem;
+}
+td {
+  color: rgba(255, 255, 255, 0.5);
+}
+.calc-bmi {
+  max-width: 670px;
+}
+.calc-bmi h1 {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: white;
+  margin-bottom: 1rem;
+}
+input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+input[type="text"],
+select {
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 0;
+  color: rgba(255, 255, 255, 0.6);
+  border-radius: 0.5rem;
+  width: 282px;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+}
+select {
+  width: 314px;
+}
+#activity {
+  width: 645px;
+}
+.calc-bmi p {
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 1rem;
+}
+
 /* ---------------------------------Media Query--------------------------------------------- */
 
 @media screen and (max-width: 576px) {
@@ -309,5 +394,21 @@ main {
   }
   .run-extra-mile img {
     width: 100%;
+  }
+
+  /* ---------------------------------- BMI Calculator Section ----------------------------------- */
+  .bmi-calculator {
+    padding: 0.5rem;
+    flex-direction: column;
+  }
+  #activity {
+    width: 314px;
+  }
+  .bmi-main-text h1 {
+    font-size: 2rem;
+    text-align: left;
+  }
+  .bmi {
+    padding: 1rem;
   }
 }
